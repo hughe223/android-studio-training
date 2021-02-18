@@ -1,0 +1,4 @@
+#Fri Feb 12 16:06:16 EST 2021
+base.0=/Users/aidanhughes/AndroidStudioProjects/AndroidStudioHW/UNIT2/DesertCafe/DroidCafe/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

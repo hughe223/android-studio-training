@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DrawableTest</string>
+    <string name="minus_button_text">-</string>
+    <string name="plus_button_text">+</string>
+</resources>
