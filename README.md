@@ -1,7 +1,7 @@
 # android-studio-training
 https://developer.android.com/courses/fundamentals-training/toc-v2
 
-Unit 1:
+# Unit 1:
 
 1.1 -> 1
 
@@ -17,7 +17,8 @@ Unit 1:
 
 3.2 -> SimpleCalc
 
-Unit 2:
+
+# Unit 2:
 
 4.1 -> DroidCafe
 
@@ -32,4 +33,10 @@ Unit 2:
 6.1 -> Scorekeeper (Created test case called DayAndNightMode)
 
 
-Unit 3:
+# Unit 3:
+
+7.1 -> AsyncTut
+
+9.1 -> Scorekeeper (Added saved instance states)
+
+10.1A -> roomHW (Working on figuring out how to implement answers to the questions, perhaps with a second database?)
