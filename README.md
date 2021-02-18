@@ -27,7 +27,9 @@ Unit 2:
 
 5.1 -> Drawable Test
 
-5.3 -> 
+5.3 -> MyApplication2
+
+6.1 -> Scorekeeper (Created test case called DayAndNightMode)
 
 
 Unit 3:
