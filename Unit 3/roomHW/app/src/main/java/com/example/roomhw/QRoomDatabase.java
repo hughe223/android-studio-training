@@ -11,7 +11,7 @@ import androidx.sqlite.db.SupportSQLiteDatabase;
 
 @Database(entities = {QPair.class}, version = 2, exportSchema = false)
 public abstract class QRoomDatabase extends RoomDatabase {
-    public abstract QDao mQADao();
+    public abstract QDao mQDao();
 
     private static QRoomDatabase INSTANCE;
 
@@ -50,7 +50,7 @@ public abstract class QRoomDatabase extends RoomDatabase {
                             "Silence, my brother."};
 
         public PopulateDbAsync(QRoomDatabase instance) {
-            mDao = instance.mQADao();
+            mDao = instance.mQDao();
         }
 
         @Override

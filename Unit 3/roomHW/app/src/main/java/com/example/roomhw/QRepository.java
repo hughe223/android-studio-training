@@ -13,7 +13,7 @@ public class QRepository {
 
     QRepository(Application application){
         QRoomDatabase db = QRoomDatabase.getDatabase(application);
-        mQDao = db.mQADao();
+        mQDao = db.mQDao();
         mAllPairs = mQDao.getAllPairs();
     }
 
