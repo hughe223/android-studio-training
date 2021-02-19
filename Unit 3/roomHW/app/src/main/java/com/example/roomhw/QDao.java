@@ -12,13 +12,13 @@ import java.util.List;
 public interface QDao {
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    void insert(QPair pair);
+    void insert(Question pair);
 
     @Query("DELETE FROM Q_table")
     void deleteAll();
 
     @Query("SELECT * from Q_table ORDER BY question ASC")
-    LiveData<List<QPair>> getAllPairs();
+    LiveData<List<Question>> getAllPairs();
 
     /*@Query("SELECT * from QA_table ORDER BY answer ASC")
     LiveData<List<QAPair>> getAllAnswers();*/

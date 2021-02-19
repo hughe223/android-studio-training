@@ -13,7 +13,7 @@ import java.util.List;
 public class QListAdapter extends RecyclerView.Adapter<QListAdapter.QAViewHolder> {
 
     private final LayoutInflater mInflater;
-    private List<QPair> mQuestions; // Cached copy of words
+    private List<Question> mQuestions; // Cached copy of words
 
     QListAdapter(Context context) { mInflater = LayoutInflater.from(context); }
 
@@ -26,7 +26,7 @@ public class QListAdapter extends RecyclerView.Adapter<QListAdapter.QAViewHolder
     @Override
     public void onBindViewHolder(QAViewHolder holder, int position) {
         if (mQuestions != null) {
-            QPair current = mQuestions.get(position);
+            Question current = mQuestions.get(position);
             holder.wordItemView.setText(current.getQuestion());
         } else {
             // Covers the case of data not being ready yet.
@@ -34,7 +34,7 @@ public class QListAdapter extends RecyclerView.Adapter<QListAdapter.QAViewHolder
         }
     }
 
-    void setPair(List<QPair> questions){
+    void setPair(List<Question> questions){
         mQuestions = questions;
         notifyDataSetChanged();
     }

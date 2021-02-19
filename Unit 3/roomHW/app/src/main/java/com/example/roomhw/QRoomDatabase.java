@@ -9,7 +9,7 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
-@Database(entities = {QPair.class}, version = 2, exportSchema = false)
+@Database(entities = {Question.class}, version = 2, exportSchema = false)
 public abstract class QRoomDatabase extends RoomDatabase {
     public abstract QDao mQDao();
 
@@ -58,7 +58,7 @@ public abstract class QRoomDatabase extends RoomDatabase {
             mDao.deleteAll();
 
             for (int i = 0; i <= questions.length - 1; i++) {
-                QPair word = new QPair(questions[i]);
+                Question word = new Question(questions[i]);
                 mDao.insert(word);
             }
             return null;

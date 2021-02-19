@@ -9,7 +9,7 @@ import java.util.List;
 
 public class QRepository {
     private QDao mQDao;
-    private LiveData<List<QPair>> mAllPairs;
+    private LiveData<List<Question>> mAllPairs;
 
     QRepository(Application application){
         QRoomDatabase db = QRoomDatabase.getDatabase(application);
@@ -17,15 +17,15 @@ public class QRepository {
         mAllPairs = mQDao.getAllPairs();
     }
 
-    public void insert(QPair pair){
+    public void insert(Question pair){
         new insertAsyncTask(mQDao).execute(pair);
     }
 
-    LiveData <List<QPair>> getAllPairs (){
+    LiveData <List<Question>> getAllPairs (){
         return mAllPairs;
     }
 
-    private static class insertAsyncTask extends AsyncTask<QPair, Void, Void> {
+    private static class insertAsyncTask extends AsyncTask<Question, Void, Void> {
         private QDao mAsyncTaskDao;
 
         insertAsyncTask(QDao dao) {
@@ -33,7 +33,7 @@ public class QRepository {
         }
 
         @Override
-        protected Void doInBackground(QPair... params) {
+        protected Void doInBackground(Question... params) {
             mAsyncTaskDao.insert(params[0]);
             return null;
         }

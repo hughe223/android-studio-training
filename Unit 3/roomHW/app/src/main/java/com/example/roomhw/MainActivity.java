@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -49,10 +48,10 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         qViewModel = ViewModelProviders.of(this).get(QViewModel.class);
-        qViewModel.getAllPairs().observe(this, new Observer<List<QPair>>() {
+        qViewModel.getAllPairs().observe(this, new Observer<List<Question>>() {
             @Override
-            public void onChanged(List<QPair> qPairs) {
-                adapter.setPair(qPairs);
+            public void onChanged(List<Question> questions) {
+                adapter.setPair(questions);
             }
         });
     }
@@ -62,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
 
         if(requestCode == NEW_PAIR_ACTIVITY_REQUEST_CODE && resultCode == RESULT_OK) {
-            QPair question = new QPair(data.getStringExtra(NewPairActivity.EXTRA_REPLY));
+            Question question = new Question(data.getStringExtra(NewPairActivity.EXTRA_REPLY));
             qViewModel.insert(question);
         } else {
             Toast.makeText(getApplicationContext(),"Nothing saved",Toast.LENGTH_LONG).show();
