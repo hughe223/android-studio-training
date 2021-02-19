@@ -10,7 +10,7 @@ import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
 @Database(entities = {Question.class,
-                      Answer.class}, version = 3, exportSchema = false)
+                      Answer.class}, version = 10, exportSchema = false)
 public abstract class QARoomDatabase extends RoomDatabase {
     public abstract QDao mQDao();
     public abstract ADao mADao();
@@ -61,6 +61,7 @@ public abstract class QARoomDatabase extends RoomDatabase {
         @Override
         protected Void doInBackground(final Void... params) {
             mQDao.deleteAll();
+            mADao.deleteAll();
 
             for (int i = 0; i <= questions.length - 1; i++) {
                 Question question = new Question(questions[i]);

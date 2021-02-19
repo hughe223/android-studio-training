@@ -33,8 +33,8 @@ public class QRepository {
         return mAllQuestions;
     }
 
-    LiveData<List<Answer>> getAllAnswers() {return mAllAnswers;
-    }
+    LiveData<List<Answer>> getAllAnswers() {return mAllAnswers; }
+
 
     private static class insertQAsyncTask extends AsyncTask<Question, Void, Void> {
         private QDao mQAsyncTaskDao;

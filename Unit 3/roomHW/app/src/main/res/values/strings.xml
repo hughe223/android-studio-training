@@ -9,7 +9,7 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="dummy_answer">Dummy Answer</string>
+    <string name="dummy_answer">No Answer Availible</string>
     <string name="add_new_question">Add new question:</string>
     <string name="what_is_the_answer">What is the answer?</string>
     <string name="save_button">Save</string>

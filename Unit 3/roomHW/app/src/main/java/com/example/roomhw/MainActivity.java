@@ -54,6 +54,13 @@ public class MainActivity extends AppCompatActivity {
                 adapter.setQuestion(questions);
             }
         });
+
+        mQAViewModel.getAllAnswers().observe(this, new Observer<List<Answer>>() {
+            @Override
+            public void onChanged(List<Answer> answers) {
+                adapter.setAnswer(answers);
+            }
+        });
     }
 
     @Override
@@ -62,7 +69,9 @@ public class MainActivity extends AppCompatActivity {
 
         if(requestCode == NEW_PAIR_ACTIVITY_REQUEST_CODE && resultCode == RESULT_OK) {
             Question question = new Question(data.getStringExtra(NewPairActivity.EXTRA_REPLY_QUESTION));
+            Answer answer = new Answer(data.getStringExtra(NewPairActivity.EXTRA_REPLY_ANSWER));
             mQAViewModel.insert(question);
+            mQAViewModel.insert(answer);
         } else {
             Toast.makeText(getApplicationContext(),"Nothing saved",Toast.LENGTH_LONG).show();
         }
@@ -90,8 +99,4 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void showAnswer(View view) {
-        Intent intent = new Intent(MainActivity.this, AnswerActivity.class);
-        startActivity(intent);
-    }
 }

@@ -29,6 +29,7 @@ public class QAViewModel extends AndroidViewModel {
         return mAllAnswers;
     }
 
+
     public void insert(Question question) {
         mRepository.insert(question);
     }
@@ -36,4 +37,6 @@ public class QAViewModel extends AndroidViewModel {
     public void insert(Answer answer) {
         mRepository.insert(answer);
     }
+
+
 }

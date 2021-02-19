@@ -1,6 +1,7 @@
 package com.example.roomhw;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,9 +12,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 public class QListAdapter extends RecyclerView.Adapter<QListAdapter.QAViewHolder> {
-
+    private final String CLICKED_ANSWER = "com.example.roomHW.ANSWER";
     private final LayoutInflater mInflater;
-    private List<Question> mQuestions; // Cached copy of words
+    private List<Question> mQuestions;
+    private List<Answer> mAnswers;
 
     QListAdapter(Context context) { mInflater = LayoutInflater.from(context); }
 
@@ -27,15 +29,20 @@ public class QListAdapter extends RecyclerView.Adapter<QListAdapter.QAViewHolder
     public void onBindViewHolder(QAViewHolder holder, int position) {
         if (mQuestions != null) {
             Question current = mQuestions.get(position);
-            holder.wordItemView.setText(current.getQuestion());
+            holder.questionItemView.setText(current.getQuestion());
         } else {
             // Covers the case of data not being ready yet.
-            holder.wordItemView.setText("No Word");
+            holder.questionItemView.setText("No Word");
         }
     }
 
     void setQuestion(List<Question> questions){
         mQuestions = questions;
+        notifyDataSetChanged();
+    }
+
+    void setAnswer(List<Answer> answers){
+        mAnswers = answers;
         notifyDataSetChanged();
     }
 
@@ -49,11 +56,23 @@ public class QListAdapter extends RecyclerView.Adapter<QListAdapter.QAViewHolder
     }
 
     class QAViewHolder extends RecyclerView.ViewHolder {
-        private final TextView wordItemView;
+        private final TextView questionItemView;
 
         private QAViewHolder(View itemView) {
             super(itemView);
-            wordItemView = itemView.findViewById(R.id.textView);
+            Context context = itemView.getContext();
+            questionItemView = itemView.findViewById(R.id.textView);
+            questionItemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Integer position = getAdapterPosition();
+                    String answer = mAnswers.get(position).mAnswer;
+                    Intent intent = new Intent(context, AnswerActivity.class);
+                    intent.putExtra(CLICKED_ANSWER, answer);
+                    context.startActivity(intent);
+                }
+            });
+
         }
     }
 
