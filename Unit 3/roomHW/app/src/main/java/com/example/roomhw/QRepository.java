@@ -12,7 +12,7 @@ public class QRepository {
     private LiveData<List<Question>> mAllPairs;
 
     QRepository(Application application){
-        QRoomDatabase db = QRoomDatabase.getDatabase(application);
+        QARoomDatabase db = QARoomDatabase.getDatabase(application);
         mQDao = db.mQDao();
         mAllPairs = mQDao.getAllPairs();
     }

@@ -10,17 +10,17 @@ import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
 @Database(entities = {Question.class}, version = 2, exportSchema = false)
-public abstract class QRoomDatabase extends RoomDatabase {
+public abstract class QARoomDatabase extends RoomDatabase {
     public abstract QDao mQDao();
 
-    private static QRoomDatabase INSTANCE;
+    private static QARoomDatabase INSTANCE;
 
-    public static QRoomDatabase getDatabase(final Context context){
+    public static QARoomDatabase getDatabase(final Context context){
         if(INSTANCE == null){
-            synchronized (QRoomDatabase.class){
+            synchronized (QARoomDatabase.class){
                 if(INSTANCE == null){
                     INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
-                            QRoomDatabase.class, "qa_database")
+                            QARoomDatabase.class, "qa_database")
                             .fallbackToDestructiveMigration()
                             .addCallback(sRoomDatabaseCallback)
                             .build();
@@ -30,7 +30,7 @@ public abstract class QRoomDatabase extends RoomDatabase {
         return INSTANCE;
     }
 
-    private static QRoomDatabase.Callback sRoomDatabaseCallback = new RoomDatabase.Callback(){
+    private static QARoomDatabase.Callback sRoomDatabaseCallback = new RoomDatabase.Callback(){
         @Override
         public void onOpen(@NonNull SupportSQLiteDatabase db) {
             super.onOpen(db);
@@ -49,7 +49,7 @@ public abstract class QRoomDatabase extends RoomDatabase {
                             "1461 days.",
                             "Silence, my brother."};
 
-        public PopulateDbAsync(QRoomDatabase instance) {
+        public PopulateDbAsync(QARoomDatabase instance) {
             mDao = instance.mQDao();
         }
 
