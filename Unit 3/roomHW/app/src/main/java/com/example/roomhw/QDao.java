@@ -8,16 +8,16 @@ import androidx.room.Query;
 import java.util.List;
 
 @Dao
-public interface QADao {
+public interface QDao {
 
     @Insert
-    void insert(QAPair pair);
+    void insert(QPair pair);
 
-    @Query("DELETE FROM QA_table")
+    @Query("DELETE FROM Q_table")
     void deleteAll();
 
-    @Query("SELECT * from QA_table ORDER BY question ASC")
-    LiveData<List<QAPair>> getAllPairs();
+    @Query("SELECT * from Q_table ORDER BY question ASC")
+    LiveData<List<QPair>> getAllPairs();
 
     /*@Query("SELECT * from QA_table ORDER BY answer ASC")
     LiveData<List<QAPair>> getAllAnswers();*/

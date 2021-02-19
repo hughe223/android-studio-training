@@ -21,7 +21,7 @@ import android.view.MenuItem;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    private QAViewModel qaViewModel;
+    private QViewModel qViewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,15 +40,15 @@ public class MainActivity extends AppCompatActivity {
         });
 
         RecyclerView recyclerView = findViewById(R.id.recyclerview);
-        final QAListAdapter adapter = new QAListAdapter(this);
+        final QListAdapter adapter = new QListAdapter(this);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        qaViewModel = ViewModelProviders.of(this).get(QAViewModel.class);
-        qaViewModel.getAllPairs().observe(this, new Observer<List<QAPair>>() {
+        qViewModel = ViewModelProviders.of(this).get(QViewModel.class);
+        qViewModel.getAllPairs().observe(this, new Observer<List<QPair>>() {
             @Override
-            public void onChanged(List<QAPair> qaPairs) {
-                adapter.setPair(qaPairs);
+            public void onChanged(List<QPair> qPairs) {
+                adapter.setPair(qPairs);
             }
         });
     }

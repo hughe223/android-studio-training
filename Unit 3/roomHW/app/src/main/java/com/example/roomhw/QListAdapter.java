@@ -6,17 +6,16 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-public class QAListAdapter extends RecyclerView.Adapter<QAListAdapter.QAViewHolder> {
+public class QListAdapter extends RecyclerView.Adapter<QListAdapter.QAViewHolder> {
 
     private final LayoutInflater mInflater;
-    private List<QAPair> mPairs; // Cached copy of words
+    private List<QPair> mPairs; // Cached copy of words
 
-    QAListAdapter(Context context) { mInflater = LayoutInflater.from(context); }
+    QListAdapter(Context context) { mInflater = LayoutInflater.from(context); }
 
     @Override
     public QAViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -27,7 +26,7 @@ public class QAListAdapter extends RecyclerView.Adapter<QAListAdapter.QAViewHold
     @Override
     public void onBindViewHolder(QAViewHolder holder, int position) {
         if (mPairs != null) {
-            QAPair current = mPairs.get(position);
+            QPair current = mPairs.get(position);
             holder.wordItemView.setText(current.getQuestion());
         } else {
             // Covers the case of data not being ready yet.
@@ -35,7 +34,7 @@ public class QAListAdapter extends RecyclerView.Adapter<QAListAdapter.QAViewHold
         }
     }
 
-    void setPair(List<QAPair> pairs){
+    void setPair(List<QPair> pairs){
         mPairs = pairs;
         notifyDataSetChanged();
     }

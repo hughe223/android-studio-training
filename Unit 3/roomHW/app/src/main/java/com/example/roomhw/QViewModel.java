@@ -8,22 +8,22 @@ import androidx.lifecycle.LiveData;
 
 import java.util.List;
 
-public class QAViewModel extends AndroidViewModel {
+public class QViewModel extends AndroidViewModel {
 
-    private QARepository mRepository;
-    private LiveData<List<QAPair>> mAllPairs;
+    private QRepository mRepository;
+    private LiveData<List<QPair>> mAllPairs;
 
-    public QAViewModel(@NonNull Application application) {
+    public QViewModel(@NonNull Application application) {
         super(application);
-        mRepository = new QARepository(application);
+        mRepository = new QRepository(application);
         mAllPairs = mRepository.getAllPairs();
     }
 
-    LiveData<List<QAPair>> getAllPairs () {
+    LiveData<List<QPair>> getAllPairs () {
         return mAllPairs;
     }
 
-    public void insert(QAPair pair) {
+    public void insert(QPair pair) {
         mRepository.insert(pair);
     }
 }
