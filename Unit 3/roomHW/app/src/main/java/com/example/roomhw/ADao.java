@@ -9,16 +9,14 @@ import androidx.room.Query;
 import java.util.List;
 
 @Dao
-public interface QDao {
+public interface ADao {
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    void insert(Question question);
+    void insert(Answer answer);
 
-    @Query("DELETE FROM Q_table")
+    @Query("DELETE FROM A_table")
     void deleteAll();
 
-    @Query("SELECT * from Q_table ORDER BY question ASC")
-    LiveData<List<Question>> getAllQuestions();
-
-
+    @Query("SELECT * from A_table ORDER BY answer ASC")
+    LiveData<List<Answer>> getAllAnswers();
 }

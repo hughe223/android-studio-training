@@ -10,7 +10,7 @@ public class Answer {
     @PrimaryKey
     @NonNull
     @ColumnInfo(name = "answer")
-    private String mAnswer;
+    public String mAnswer;
 
     public Answer(@NonNull String answer) {this.mAnswer = answer;}
     public String getQuestion(){return this.mAnswer;}

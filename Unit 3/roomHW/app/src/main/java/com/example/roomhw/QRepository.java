@@ -9,32 +9,57 @@ import java.util.List;
 
 public class QRepository {
     private QDao mQDao;
-    private LiveData<List<Question>> mAllPairs;
+    private ADao mADao;
+    private LiveData<List<Question>> mAllQuestions;
+    private LiveData<List<Answer>> mAllAnswers;
 
     QRepository(Application application){
         QARoomDatabase db = QARoomDatabase.getDatabase(application);
         mQDao = db.mQDao();
-        mAllPairs = mQDao.getAllPairs();
+        mADao = db.mADao();
+        mAllQuestions = mQDao.getAllQuestions();
+        mAllAnswers = mADao.getAllAnswers();
     }
 
-    public void insert(Question pair){
-        new insertAsyncTask(mQDao).execute(pair);
+    public void insert(Question question) {
+        new insertQAsyncTask(mQDao).execute(question);
     }
 
-    LiveData <List<Question>> getAllPairs (){
-        return mAllPairs;
+    public void insert(Answer answer) {
+        new insertAAsyncTask(mADao).execute(answer);
     }
 
-    private static class insertAsyncTask extends AsyncTask<Question, Void, Void> {
-        private QDao mAsyncTaskDao;
+    LiveData<List<Question>> getAllQuestions (){
+        return mAllQuestions;
+    }
 
-        insertAsyncTask(QDao dao) {
-            mAsyncTaskDao = dao;
+    LiveData<List<Answer>> getAllAnswers() {return mAllAnswers;
+    }
+
+    private static class insertQAsyncTask extends AsyncTask<Question, Void, Void> {
+        private QDao mQAsyncTaskDao;
+
+        insertQAsyncTask(QDao dao) {
+            mQAsyncTaskDao = dao;
         }
 
         @Override
         protected Void doInBackground(Question... params) {
-            mAsyncTaskDao.insert(params[0]);
+            mQAsyncTaskDao.insert(params[0]);
+            return null;
+        }
+    }
+
+    private static class insertAAsyncTask extends AsyncTask<Answer, Void, Void> {
+        private ADao mAAsyncTaskDao;
+
+        insertAAsyncTask(ADao dao) {
+            mAAsyncTaskDao = dao;
+        }
+
+        @Override
+        protected Void doInBackground(Answer... params) {
+            mAAsyncTaskDao.insert(params[0]);
             return null;
         }
     }

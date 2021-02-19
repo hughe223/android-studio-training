@@ -24,7 +24,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
     public static final int NEW_PAIR_ACTIVITY_REQUEST_CODE = 1;
 
-    private QViewModel qViewModel;
+    private QAViewModel mQAViewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,11 +47,11 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        qViewModel = ViewModelProviders.of(this).get(QViewModel.class);
-        qViewModel.getAllPairs().observe(this, new Observer<List<Question>>() {
+        mQAViewModel = ViewModelProviders.of(this).get(QAViewModel.class);
+        mQAViewModel.getAllQuestions().observe(this, new Observer<List<Question>>() {
             @Override
             public void onChanged(List<Question> questions) {
-                adapter.setPair(questions);
+                adapter.setQuestion(questions);
             }
         });
     }
@@ -61,8 +61,8 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
 
         if(requestCode == NEW_PAIR_ACTIVITY_REQUEST_CODE && resultCode == RESULT_OK) {
-            Question question = new Question(data.getStringExtra(NewPairActivity.EXTRA_REPLY));
-            qViewModel.insert(question);
+            Question question = new Question(data.getStringExtra(NewPairActivity.EXTRA_REPLY_QUESTION));
+            mQAViewModel.insert(question);
         } else {
             Toast.makeText(getApplicationContext(),"Nothing saved",Toast.LENGTH_LONG).show();
         }

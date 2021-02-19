@@ -34,7 +34,7 @@ public class QListAdapter extends RecyclerView.Adapter<QListAdapter.QAViewHolder
         }
     }
 
-    void setPair(List<Question> questions){
+    void setQuestion(List<Question> questions){
         mQuestions = questions;
         notifyDataSetChanged();
     }

@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class NewPairActivity extends AppCompatActivity {
-    public static final String EXTRA_REPLY = "com.example.android.roomHW.REPLY";
+    public static final String EXTRA_REPLY_QUESTION = "com.example.android.roomHW.Q_REPLY";
     private EditText mQuestionEdit;
 
     @Override
@@ -29,7 +29,7 @@ public class NewPairActivity extends AppCompatActivity {
                 }
                 else {
                     String question = mQuestionEdit.getText().toString();
-                    replyIntent.putExtra(EXTRA_REPLY, question);
+                    replyIntent.putExtra(EXTRA_REPLY_QUESTION, question);
                     setResult(RESULT_OK, replyIntent);
                 }
                 finish();
