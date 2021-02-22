@@ -10,7 +10,7 @@ import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
 @Database(entities = {Question.class,
-                      Answer.class}, version = 10, exportSchema = false)
+                      Answer.class}, version = 11, exportSchema = false)
 public abstract class QARoomDatabase extends RoomDatabase {
     public abstract QDao mQDao();
     public abstract ADao mADao();

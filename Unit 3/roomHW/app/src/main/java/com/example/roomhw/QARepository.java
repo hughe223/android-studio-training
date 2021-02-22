@@ -7,13 +7,13 @@ import androidx.lifecycle.LiveData;
 
 import java.util.List;
 
-public class QRepository {
+public class QARepository {
     private QDao mQDao;
     private ADao mADao;
     private LiveData<List<Question>> mAllQuestions;
     private LiveData<List<Answer>> mAllAnswers;
 
-    QRepository(Application application){
+    QARepository(Application application){
         QARoomDatabase db = QARoomDatabase.getDatabase(application);
         mQDao = db.mQDao();
         mADao = db.mADao();
@@ -28,6 +28,11 @@ public class QRepository {
     public void insert(Answer answer) {
         new insertAAsyncTask(mADao).execute(answer);
     }
+
+    public void delete(int id) {new deleteQAsyncTask(mQDao).execute(id);
+                                new deleteAAsyncTask(mADao).execute(id);}
+
+
 
     LiveData<List<Question>> getAllQuestions (){
         return mAllQuestions;
@@ -60,6 +65,32 @@ public class QRepository {
         @Override
         protected Void doInBackground(Answer... params) {
             mAAsyncTaskDao.insert(params[0]);
+            return null;
+        }
+    }
+
+    private static class deleteQAsyncTask extends AsyncTask<Integer, Void, Void> {
+        private QDao mQAsyncTaskDao;
+
+    deleteQAsyncTask(QDao dao){mQAsyncTaskDao = dao;}
+
+
+        @Override
+        protected Void doInBackground(Integer... integers) {
+            mQAsyncTaskDao.delete(integers[0]);
+            return null;
+        }
+    }
+
+    private static class deleteAAsyncTask extends AsyncTask<Integer, Void, Void> {
+        private ADao mAAsyncTaskDao;
+
+        deleteAAsyncTask(ADao dao){mAAsyncTaskDao = dao;}
+
+
+        @Override
+        protected Void doInBackground(Integer... integers) {
+            mAAsyncTaskDao.delete(integers[0]);
             return null;
         }
     }

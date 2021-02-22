@@ -5,24 +5,31 @@ import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.os.Parcelable;
 import android.view.View;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+    public static final String LIST_STATE_KEY = "list-key";
     public static final int NEW_PAIR_ACTIVITY_REQUEST_CODE = 1;
+    public Parcelable mListState = null;
+    private LinearLayoutManager manager;
 
     private QAViewModel mQAViewModel;
 
@@ -42,11 +49,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //recycler view init
+        manager = new LinearLayoutManager(this);
         RecyclerView recyclerView = findViewById(R.id.recyclerview);
-        final QListAdapter adapter = new QListAdapter(this);
+        final QAListAdapter adapter = new QAListAdapter(this);
         recyclerView.setAdapter(adapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setLayoutManager(manager);
 
+        //touch helper init
+        ItemTouchHelper itemTouchHelper = new ItemTouchHelper(new QAListAdapter.SwipeToDeleteCallback(adapter));
+        itemTouchHelper.attachToRecyclerView(recyclerView);
+
+        //View model init
         mQAViewModel = ViewModelProviders.of(this).get(QAViewModel.class);
         mQAViewModel.getAllQuestions().observe(this, new Observer<List<Question>>() {
             @Override
@@ -61,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
                 adapter.setAnswer(answers);
             }
         });
+
     }
 
     @Override
@@ -99,4 +114,27 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        Parcelable mState = manager.onSaveInstanceState();
+        outState.putParcelable(LIST_STATE_KEY, mState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        if(savedInstanceState != null){
+            mListState = savedInstanceState.getParcelable(LIST_STATE_KEY);
+        }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        if(mListState != null){
+            manager.onRestoreInstanceState(mListState);
+        }
+    }
 }

@@ -10,13 +10,13 @@ import java.util.List;
 
 public class QAViewModel extends AndroidViewModel {
 
-    private QRepository mRepository;
+    private QARepository mRepository;
     private LiveData<List<Question>> mAllQuestions;
     private LiveData<List<Answer>> mAllAnswers;
 
     public QAViewModel(@NonNull Application application) {
         super(application);
-        mRepository = new QRepository(application);
+        mRepository = new QARepository(application);
         mAllQuestions = mRepository.getAllQuestions();
         mAllAnswers = mRepository.getAllAnswers();
     }
@@ -38,5 +38,5 @@ public class QAViewModel extends AndroidViewModel {
         mRepository.insert(answer);
     }
 
-
+    public void delete(int id) {mRepository.delete(id);}
 }

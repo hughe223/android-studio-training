@@ -17,7 +17,10 @@ public interface QDao {
     @Query("DELETE FROM Q_table")
     void deleteAll();
 
-    @Query("SELECT * from Q_table ORDER BY question ASC")
+    @Query("DELETE FROM Q_TABLE WHERE id=:id")
+    void delete(int id);
+
+    @Query("SELECT * from Q_table ORDER BY id ASC")
     LiveData<List<Question>> getAllQuestions();
 
 

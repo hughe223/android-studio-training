@@ -7,17 +7,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-public class QListAdapter extends RecyclerView.Adapter<QListAdapter.QAViewHolder> {
+public class QAListAdapter extends RecyclerView.Adapter<QAListAdapter.QAViewHolder> {
     private final String CLICKED_ANSWER = "com.example.roomHW.ANSWER";
     private final LayoutInflater mInflater;
     private List<Question> mQuestions;
     private List<Answer> mAnswers;
 
-    QListAdapter(Context context) { mInflater = LayoutInflater.from(context); }
+    QAListAdapter(Context context) { mInflater = LayoutInflater.from(context); }
 
     @Override
     public QAViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -43,6 +45,12 @@ public class QListAdapter extends RecyclerView.Adapter<QListAdapter.QAViewHolder
 
     void setAnswer(List<Answer> answers){
         mAnswers = answers;
+        notifyDataSetChanged();
+    }
+
+    void deleteItem(int id) {
+        mAnswers.remove(id);
+        mQuestions.remove(id);
         notifyDataSetChanged();
     }
 
@@ -73,6 +81,26 @@ public class QListAdapter extends RecyclerView.Adapter<QListAdapter.QAViewHolder
                 }
             });
 
+        }
+    }
+
+    public static class SwipeToDeleteCallback extends ItemTouchHelper.SimpleCallback {
+
+        QAListAdapter mAdapter;
+        public SwipeToDeleteCallback(QAListAdapter adapter) {
+            super(0,ItemTouchHelper.LEFT|ItemTouchHelper.RIGHT);
+            mAdapter = adapter;
+        }
+
+        @Override
+        public boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder target) {
+            return false;
+        }
+
+        @Override
+        public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
+            int position = viewHolder.getAdapterPosition();
+            mAdapter.deleteItem(position);
         }
     }
 

@@ -17,6 +17,9 @@ public interface ADao {
     @Query("DELETE FROM A_table")
     void deleteAll();
 
+    @Query("DELETE FROM A_TABLE WHERE id=:id")
+    void delete(int id);
+
     @Query("SELECT * from A_table ORDER BY id ASC")
     LiveData<List<Answer>> getAllAnswers();
 }
