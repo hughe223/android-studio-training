@@ -1,7 +1,7 @@
 # android-studio-training
 
-#Beginner
+# Beginner
 https://developer.android.com/courses/fundamentals-training/toc-v2
 
-#Advanced
+# Advanced
 https://developer.android.com/courses/advanced-training/toc
