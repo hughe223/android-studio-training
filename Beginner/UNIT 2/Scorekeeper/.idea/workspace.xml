@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f7adf0fa-c11c-45c8-91a2-1c618777adba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../HelloToast/app/src/main/java/com/example/android/hellotoast/HelloActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloToast/app/src/main/res/layout/activity_hello.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/example/android/scorekeeper/DayAndNightModes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HelloToast/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../HelloToast/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HelloToast/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HelloToast/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HelloToast/app/src/main/java/com/example/android/hellotoast/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HelloToast/app/src/main/java/com/example/android/hellotoast/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HelloToast/app/src/main/res/layout-land/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HelloToast/app/src/main/res/layout-land/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HelloToast/app/src/main/res/layout-xlarge/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HelloToast/app/src/main/res/layout-xlarge/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HelloToast/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HelloToast/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HelloToast/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HelloToast/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HelloToast/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../HelloToast/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HelloToast/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../HelloToast/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HelloToast/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../HelloToast/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PhoneNumberSpinnerEspresso/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../PhoneNumberSpinnerEspresso/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PhoneNumberSpinnerEspresso/app/src/androidTest/java/com/example/android/phonenumberspinner/SpinnerSelectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PhoneNumberSpinnerEspresso/app/src/androidTest/java/com/example/android/phonenumberspinner/SpinnerSelectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PhoneNumberSpinnerEspresso/app/src/main/java/com/example/android/phonenumberspinner/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../PhoneNumberSpinnerEspresso/app/src/main/java/com/example/android/phonenumberspinner/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PhoneNumberSpinnerEspresso/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PhoneNumberSpinnerEspresso/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PhoneNumberSpinnerEspresso/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../PhoneNumberSpinnerEspresso/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PhoneNumberSpinnerEspresso/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../PhoneNumberSpinnerEspresso/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PhoneNumberSpinnerEspresso/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../PhoneNumberSpinnerEspresso/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/scorekeeper/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/scorekeeper/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TwoActivitiesLifecycle/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../TwoActivitiesLifecycle/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TwoActivitiesLifecycle/app/src/main/java/com/example/android/twoactivities/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TwoActivitiesLifecycle/app/src/main/java/com/example/android/twoactivities/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TwoActivitiesLifecycle/app/src/main/java/com/example/android/twoactivities/SecondActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TwoActivitiesLifecycle/app/src/main/java/com/example/android/twoactivities/SecondActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TwoActivitiesLifecycle/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TwoActivitiesLifecycle/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TwoActivitiesLifecycle/app/src/main/res/layout/activity_second.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TwoActivitiesLifecycle/app/src/main/res/layout/activity_second.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TwoActivitiesLifecycle/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../TwoActivitiesLifecycle/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TwoActivitiesLifecycle/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../TwoActivitiesLifecycle/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TwoActivitiesLifecycle/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../TwoActivitiesLifecycle/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_4_Edited_API_30]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1oZwFMEapaCCpmanjpCMhAfy489" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_4_XL_Edited_API_30" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-02-17T16:28:15.331Z" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Scorekeeper.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f7adf0fa-c11c-45c8-91a2-1c618777adba" name="Default Changelist" comment="" />
+      <created>1613507315438</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1613507315438</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2403" y="459" key="#com.google.gct.testrecorder.ui.TestClassNameInputDialog" timestamp="1613507850477">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2403" y="459" key="#com.google.gct.testrecorder.ui.TestClassNameInputDialog/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1613507850477" />
+    <state x="2453" y="253" key="#com.intellij.ide.util.MemberChooser" timestamp="1613578924995">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2453" y="253" key="#com.intellij.ide.util.MemberChooser/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1613578924995" />
+    <state x="1780" y="100" width="1720" height="880" key="AVDManager" timestamp="1613579719218">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1780" y="100" width="1720" height="880" key="AVDManager/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1613579719218" />
+    <state x="2462" y="324" key="AndroidCreateXmlResourceDialog" timestamp="1613579484449">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2462" y="324" key="AndroidCreateXmlResourceDialog/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1613579484449" />
+    <state width="1878" height="305" key="GridCell.Tab.0.bottom" timestamp="1613507881549">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="305" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1613507753802" />
+    <state width="1878" height="305" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1613507881549" />
+    <state width="1878" height="305" key="GridCell.Tab.0.center" timestamp="1613507881548">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="305" key="GridCell.Tab.0.center/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1613507753800" />
+    <state width="1878" height="305" key="GridCell.Tab.0.center/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1613507881548" />
+    <state width="1878" height="305" key="GridCell.Tab.0.left" timestamp="1613507881548">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="305" key="GridCell.Tab.0.left/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1613507753799" />
+    <state width="1878" height="305" key="GridCell.Tab.0.left/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1613507881548" />
+    <state width="1878" height="305" key="GridCell.Tab.0.right" timestamp="1613507881549">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="305" key="GridCell.Tab.0.right/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1613507753801" />
+    <state width="1878" height="305" key="GridCell.Tab.0.right/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1613507881549" />
+    <state width="1878" height="305" key="GridCell.Tab.1.bottom" timestamp="1613507881551">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="305" key="GridCell.Tab.1.bottom/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1613507752079" />
+    <state width="1878" height="305" key="GridCell.Tab.1.bottom/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1613507881551" />
+    <state width="1878" height="305" key="GridCell.Tab.1.center" timestamp="1613507881550">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="305" key="GridCell.Tab.1.center/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1613507752078" />
+    <state width="1878" height="305" key="GridCell.Tab.1.center/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1613507881550" />
+    <state width="1878" height="305" key="GridCell.Tab.1.left" timestamp="1613507881550">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="305" key="GridCell.Tab.1.left/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1613507752078" />
+    <state width="1878" height="305" key="GridCell.Tab.1.left/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1613507881550" />
+    <state width="1878" height="305" key="GridCell.Tab.1.right" timestamp="1613507881551">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="305" key="GridCell.Tab.1.right/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1613507752079" />
+    <state width="1878" height="305" key="GridCell.Tab.1.right/1680.0.1920.1080/0.23.1680.1027@1680.0.1920.1080" timestamp="1613507881551" />
+  </component>
+</project>

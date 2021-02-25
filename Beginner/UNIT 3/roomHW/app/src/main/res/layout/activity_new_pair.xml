@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewPairActivity"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/QuestionAddTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_a_flashquiz_question"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/question_edit_text"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:hint="@string/add_new_question"
+        android:inputType="textAutoComplete"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/answer_edit_text"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:hint="@string/what_is_the_answer"
+        android:inputType="textAutoComplete"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="@string/save_button" />
+
+
+
+</LinearLayout>
