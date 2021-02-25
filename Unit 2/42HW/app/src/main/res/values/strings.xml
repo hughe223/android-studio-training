@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">4.2 HW</string>
-    <string name="crushed_nuts_text">Crushed nuts</string>
-    <string name="cherries_text">Cherries</string>
-    <string name="oreo_text">Oreo cookie crumbles</string>
-    <string name="toast_button_label">Show toast</string>
-    <string name="sprinkles_text">Sprinkles</string>
-    <string name="chocolate_syrup_text">Chocolate syrup</string>
-</resources>
