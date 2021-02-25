@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">My Application</string>
-    <string name="hello_button">Say Hello</string>
-    <string name="count_button">Count</string>
-    <string name="view_count">0</string>
-    <string name="hello_message">Hello!</string>
-    <string name="view_count2">0</string>
-    <string name="storedCount">storedCount</string>
-</resources>
