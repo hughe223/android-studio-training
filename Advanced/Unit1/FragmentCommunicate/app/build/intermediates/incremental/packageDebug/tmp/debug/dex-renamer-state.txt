@@ -1,0 +1,4 @@
+#Mon Mar 01 13:15:54 EST 2021
+base.0=/Users/aidanhughes/Desktop/android-studio-repo/android-studio-training/Advanced/Unit1/FragmentCommunicate/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

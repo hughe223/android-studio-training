@@ -1,0 +1,13 @@
+com/example/android/FragmentCommunicate/BuildConfig.java
+ com.example.android.FragmentCommunicate.BuildConfig
+com/example/android/FragmentCommunicate/SimpleFragment.java
+ com.example.android.FragmentCommunicate.SimpleFragment
+ com.example.android.FragmentCommunicate.SimpleFragment$1
+ com.example.android.FragmentCommunicate.SimpleFragment$2
+ com.example.android.FragmentCommunicate.SimpleFragment$OnFragmentInteractionListener
+com/example/android/FragmentCommunicate/MainActivity.java
+ com.example.android.FragmentCommunicate.MainActivity
+ com.example.android.FragmentCommunicate.MainActivity$1
+com/example/android/FragmentCommunicate/SecondActivity.java
+ com.example.android.FragmentCommunicate.SecondActivity
+ com.example.android.FragmentCommunicate.SecondActivity$1
