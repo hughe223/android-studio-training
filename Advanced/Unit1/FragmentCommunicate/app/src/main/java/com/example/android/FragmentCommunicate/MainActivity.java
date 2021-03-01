@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity implements SimpleFragment.On
     @Override
     public void onRadioButtonChoice(int choice) {
         mRadioButtonChoice = choice;
-        String message;
+        String message = "";
         switch(choice){
             case 0:
                 message = "yes";
@@ -101,10 +101,7 @@ public class MainActivity extends AppCompatActivity implements SimpleFragment.On
             case 1:
                 message = "no";
                 break;
-
-            case 2:
             default:
-                message = "None";
                 break;
         }
         Toast.makeText(this, "You chose " + message + "!", Toast.LENGTH_SHORT).show();
